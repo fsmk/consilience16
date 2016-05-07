@@ -80,7 +80,9 @@
     </nav>
 
     <!-- Header -->
-    <header>
+   <!--  <header>
+
+
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -93,8 +95,58 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> -->
 
+    <section>
+
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+         
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/slider/image1.png" alt="...">
+              <div class="carousel-caption">
+                <span class="skills"><h2>Consilience 2016</h2></span>
+                <hr class="star-primary">
+                <span class="skills"><h2>A conference on open access & IP</h2></span>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/slider/image1.png" alt="...">
+              <div class="carousel-caption">
+                <span class="skills"><h2>Consilience 2016</h2></span>
+                <hr class="star-primary">
+                <span class="skills"><h2>A conference on open access & IP</h2></span>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/slider/image1.png" alt="...">
+              <div class="carousel-caption">
+                <span class="skills"><h2>Consilience 2016</h2></span>
+                <hr class="star-primary">
+                <span class="skills"><h2>A conference on open access & IP</h2></span>
+
+              </div>
+            </div>
+          </div>
+         
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div> <!-- Carousel -->
+
+        
+    </section>
     
     <!-- About Section -->
     <section  id="about">
@@ -108,14 +160,15 @@
             
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p>'Consilience' is the annual flagship conference of the Law and
+                    <p class="text-justify">'Consilience' is the annual flagship conference of the Law and
 Technology Society of National Law School of India University,
 Bangalore. This year, the Conference will be jointly hosted by the Law
 and Technology Society, and SpicyIP, India's premier blog in intellectual
-property and innovation law and policy.</p>
+property and innovation law and policy. Previous editions of the Conference have focused on themes such as
+‘Net Neutrality’ and ‘Cloud Computing’.</p>
                 </div>
                 <div class="col-lg-4">
-                    <p> It provides a platform for some of the best minds in law and
+                    <p class="text-justify"> It provides a platform for some of the best minds in law and
 technology to gather, brainstorm and deliberate on the most
 challenging issues at the interface of law and technology. Apart from
 the intellectual stimulation, Consilience provides a platform for the
@@ -511,6 +564,12 @@ the government of India or at various international fora.</p>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
+
+    <script>
+        $('.carousel').carousel({
+            interval: 3000
+        })
+    </script>
 
 </body>
 
